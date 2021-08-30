@@ -9,6 +9,11 @@ body {
 }
 
 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation a {
   text-decoration: none;
   color: #9ca9ad;
 }
@@ -33,6 +38,10 @@ a {
 
 .menu li {
   padding: 10px;
+}
+
+.menu li:hover {
+  color: #0399ff;
 }
 
 .name {
@@ -68,6 +77,11 @@ header img:hover {
   background-color: #0b5870;
   color: #fff;
   border-radius: 10px;
+  transition: all.5s;
+}
+
+.tag:hover {
+  transform: scale(1.2);
 }
 
 .sub-title {
@@ -75,11 +89,17 @@ header img:hover {
   color: yellow;
 }
 
+.sub-title:hover {
+  color: black;
+  background-color: #fff;
+}
+
 .content {
   display: flex;
   flex-flow: row;
   margin: 0 auto;
   justify-content: space-around;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -90,21 +110,32 @@ header img:hover {
   border-radius: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 60px;
-}
-
 .tag-list {
   padding: 0;
   display: flex;
-  flex-flow: row;
-  list-style-type: none;
+  align-items: center;
 }
+
+.tag-link {
+  transition: padding 0.3s linear;
+}
+
+.tag-link:hover {
+  padding: 0px 10px 0px 10px;
+}
+
 .tag-yellow {
   background-color: #ff9904;
 }
 
 .tag-blue {
   background-color: #0399ff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
 }
